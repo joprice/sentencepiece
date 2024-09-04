@@ -46,9 +46,9 @@ inline void ParseCommandLineFlags(const char *usage, int *argc, char ***argv,
 
 inline void ShutdownLibrary() {
   google::protobuf::ShutdownProtobufLibrary();
-#ifdef HAS_ABSL_CLEANUP_FLAGS
-  absl::CleanupFlags();
-#endif
+// #ifdef HAS_ABSL_CLEANUP_FLAGS
+//   absl::CleanupFlags();
+// #endif
 }
 
 class ScopedResourceDestructor {
